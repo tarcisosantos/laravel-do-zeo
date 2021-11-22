@@ -20,7 +20,9 @@
     <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Corso</a> -->
 
     <!-- Image Logo -->
-    <a class="navbar-brand logo-image" href="#"><img src="{{asset('layouts/images/logo.svg')}}" alt="alternative"></a>
+    <a class="navbar-brand logo-image" href="{{route('site.home')}}">
+        <img src="{{asset('layouts/images/logo.svg')}}" alt="alternative">
+    </a>
 
     <!-- Mobile Menu Toggle Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -45,11 +47,11 @@
                 <a class="nav-link dropdown-toggle page-scroll" href="#date" id="navbarDropdown"
                    role="button" aria-haspopup="true" aria-expanded="false">DATE</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{assert('articleDetails/article-details.blade.php')}}"><span class="item-text">ARTICLE DETAILS</span></a>
+                    <a class="dropdown-item" href="{{route('site.article')}}"><span class="item-text">ARTICLE DETAILS</span></a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{{asset('termsConditions/terms-conditions.blade.php')}}"><span class="item-text">TERMS CONDITIONS</span></a>
+                    <a class="dropdown-item" href="{{route('site.terms')}}"><span class="item-text">TERMS CONDITIONS</span></a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{{asset('privacyPolicy/privacy-policy.blade.php')}}"><span class="item-text">PRIVACY POLICY</span></a>
+                    <a class="dropdown-item" href="{{route('site.private')}}"><span class="item-text">PRIVACY POLICY</span></a>
                 </div>
             </li>
             <!-- end of dropdown menu -->
@@ -152,15 +154,15 @@
                     <ul class="list-unstyled li-space-lg p-small">
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="terms-conditions.html">Terms & Conditions</a></div>
+                            <div class="media-body"><a href="{{route('site.terms')}}">Terms & Conditions</a></div>
                         </li>
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="privacy-policy.html">Privacy Policy</a></div>
+                            <div class="media-body"><a href="{{route('site.private')}}">Privacy Policy</a></div>
                         </li>
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="article-details.html">Article Details</a></div>
+                            <div class="media-body"><a href="{{route('site.article')}}">Article Details</a></div>
                         </li>
                     </ul>
                 </div>
@@ -171,15 +173,15 @@
                     <ul class="list-unstyled li-space-lg p-small">
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="article-details.html">Article Details</a></div>
+                            <div class="media-body"><a href="{{route('site.article')}}">Article Details</a></div>
                         </li>
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="terms-conditions.html">Terms & Conditions</a></div>
+                            <div class="media-body"><a href="{{route('site.terms')}}">Terms & Conditions</a></div>
                         </li>
                         <li class="media">
                             <i class="fas fa-square"></i>
-                            <div class="media-body"><a href="privacy-policy.html">Privacy Policy</a></div>
+                            <div class="media-body"><a href="{{route('site.private')}}">Privacy Policy</a></div>
                         </li>
                     </ul>
                 </div>

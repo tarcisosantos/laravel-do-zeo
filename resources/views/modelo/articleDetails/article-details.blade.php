@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="image-container-large">
-                    <img class="img-fluid" src="images/article-details-large.jpg" alt="alternative">
+                    <img class="img-fluid" src="{{asset('layouts/images/article-details-large.jpg')}}" alt="alternative">
                 </div> <!-- end of image-container-large -->
                 <div class="text-container">
                     <h3>Business Analysis And Reporting Tools</h3>
@@ -77,7 +77,7 @@
                         </div> <!-- end of col -->
                         <div class="col-md-6">
                             <div class="image-container-small">
-                                <img class="img-fluid" src="images/article-details-small.jpg" alt="alternative">
+                                <img class="img-fluid" src="{{asset('layouts/images/article-details-small.jpg')}}" alt="alternative">
                             </div> <!-- end of image-container-small -->
                         </div> <!-- end of col -->
                     </div> <!-- end of row -->
@@ -91,7 +91,7 @@
                     <h3>Project Evaluation And Predictions</h3>
                     <p>By using any of the Services, or submitting or collecting any Personal Information via the Services, you consent to the collection, transfer, storage disclosure, and use of your Personal Information in the manner set out in this Privacy Policy. If you do not consent to the use of your Personal Information in these ways, please stop using the Services. Information in the manner set out in this Privacy Policy. If you do not consent to the use of your Personal Information in these ways, please stop using the Services.</p>
                 </div> <!-- end of text-container -->
-                <a class="btn-solid-reg" href="index.html">BACK</a>
+                <a class="btn-solid-reg" href="{{route('site.home')}}">BACK</a>
             </div> <!-- end of col-->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
@@ -105,7 +105,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumbs">
-                    <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>Longer Article Title Should Go Here</span>
+                    <a href="{{route('site.home')}}">Home</a><i class="fa fa-angle-double-right"></i><span>Longer Article Title Should Go Here</span>
                 </div> <!-- end of breadcrumbs -->
             </div> <!-- end of col -->
         </div> <!-- end of row -->

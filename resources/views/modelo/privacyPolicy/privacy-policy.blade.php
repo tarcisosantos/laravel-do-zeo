@@ -140,7 +140,7 @@
 
                     </div> <!-- end of col-->
                 </div> <!-- end of row -->
-                <a class="btn-solid-reg" href="index.html">BACK</a>
+                <a class="btn-solid-reg" href="{{route('site.home')}}">BACK</a>
             </div> <!-- end of col-->
         </div> <!-- end of row -->
     </div> <!-- end of container -->
